@@ -1,0 +1,40 @@
+/* .custom-nav-link {
+	display: block;
+	padding: 0.5rem 1rem;
+	color: rgba(255, 255, 255, 0.55);
+	text-decoration: none;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out;
+} */
+
+/* body {
+	display: flex;
+	justify-content: center;
+} */
+/* .navbar {
+	background-color: antiquewhite;
+	text-align: center;
+	display: flex;
+}
+
+.navbar h1 {
+	border: 2px solid red;
+	align-self: center;
+} */
+
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	color: red;
+}
+
+.logo-font {
+	border: 2px solid black;
+}
+
+.line {
+	margin-top: 22px;
+	width: 220px;
+	height: 4px;
+	background-color: black;
+}

@@ -1,19 +1,17 @@
-import axios from 'axios'
+import axios from "axios";
+import { searchParam } from "../pages/home";
+const instance = axios.create({
+	baseURL: "http://localhost:5000/",
+	headers: { Accept: "application/json" },
+});
 
-const instance = axios.create ({
-    baseURL : 'http://localhost:5000/',
-    headers: {'Accept': 'application/json'}
-  })
-
-async function getProducts(){
-    try{
-        const res = await instance.get('/products');
-        return res.data
-    } 
-    catch(error){
-        throw new Error(error)
-    }
+async function getRecipes() {
+	try {
+		const res = await instance.get("deserturi");
+		return res.data;
+	} catch (error) {
+		throw new Error(error);
+	}
 }
 
-
-export { getProducts }
+export { getRecipes };
